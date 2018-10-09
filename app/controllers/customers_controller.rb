@@ -9,5 +9,4 @@ class CustomersController < ApplicationController
     LeadsWorker.perform_async(params[:leads].path)
     redirect_to customers_path
   end
-
 end
